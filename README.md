@@ -3,14 +3,25 @@ Face Recognizer is about Recognizing Faces of an Individual with the help of the
 Facial Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.<br><br>
 The Algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor classifier](https://www.pyimagesearch.com/2016/08/08/k-nn-classifier-for-image-classification/). It uses Euclidean distance to compare images for similarity. <br><br>  
 
+# Prerequisites
+
+Build and install dlib library
+
+```
+git clone https://github.com/davisking/dlib.git
+mkdir build
+cd build
+cmake ..
+cmake --build
+cd ..
+python setup.py install
+```
+
+
 # Setup
-* pip install keras
-* pip install numpy
-* pip install cmake
-* pip install dlib
-* pip install opencv
-* pip install imutils
-* pip install face_recognition<br><br>
+```
+pip install -r requirements.txt
+```
 
 Set the path of the input images in the code and run the following command:
 ```
@@ -90,3 +101,4 @@ It is used to create 128-d face embeddings of the input image as well as custom 
 * [Facial Landmarks](https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/)
 * [Facial Alignment](https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/)
 * [Face Recognition for Beginners](https://towardsdatascience.com/face-recognition-for-beginners-a7a9bd5eb5c2)
+* [Face Recognition Basics](https://www.coursera.org/lecture/convolutional-neural-networks/what-is-face-recognition-lUBYU)
